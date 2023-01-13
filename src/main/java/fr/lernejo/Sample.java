@@ -20,9 +20,9 @@ public class Sample {
         MULT((a, b) -> a * b),
         ;
 
-        final BiFunction<Integer, Integer, Integer> func;
+        final private BiFunction<Integer, Integer, Integer> func;
 
-        Operation(BiFunction<Integer, Integer, Integer> func) {
+        private Operation(BiFunction<Integer, Integer, Integer> func) {
             this.func = func;
         }
     }
